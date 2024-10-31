@@ -5,4 +5,4 @@ reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\As
 reg ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f
 if not exist "C:\Windows\SystemApps\Shared" mkdir "C:\Windows\SystemApps\Shared"
 if not exist "C:\Windows\SystemApps\Shared\WebView2SDK" mkdir "C:\Windows\SystemApps\Shared\WebView2SDK"
-shutdown /s /t 10
+exit
